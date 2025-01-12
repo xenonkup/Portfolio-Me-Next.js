@@ -8,26 +8,26 @@ export const Navbar = () => {
 
     return (
         <section className='border-b border-black'>
-        <nav className='w-full z-20 top-0 bg-white px-20'>
+        <nav className='w-full z-20 top-0 bg-white px-4 md:px-20 lg:px-44'>
             <div className='w-full md:w-full '>
                 <div className='flex items-center justify-between h-20'>
                     {/* Logo */}
-                    <Link href="#" className='text-xl font-bold text-gray-800 hover:text-gray-600'>
+                    <Link href="#" className='text-2xl font-extrabold text-black hover:text-blue-400'>
                         TIGER
                     </Link>
 
                     {/* Desktop Menu */}
-                    <div className='hidden md:flex space-x-8'>
-                        <Link href="#" className='text-gray-600 hover:text-gray-900 font-medium'>
+                    <div className='hidden md:flex space-x-8 text-xl'>
+                        <Link href="#" className=' text-black hover:text-blue-400 font-extrabold'>
                             HOME
                         </Link>
-                        <Link href="#" className='text-gray-600 hover:text-gray-900 font-medium'>
+                        <Link href="#" className=' text-black hover:text-blue-400 font-extrabold'>
                             SKILLS
                         </Link>
-                        <Link href="#" className='text-gray-600 hover:text-gray-900 font-medium'>
+                        <Link href="#" className=' text-black hover:text-blue-400 font-extrabold'>
                             PROJECTS
                         </Link>
-                        <Link href="#" className='text-gray-600 hover:text-gray-900 font-medium'>
+                        <Link href="#" className=' text-black hover:text-blue-400 font-extrabold'>
                             CONTACT
                         </Link>
                     </div>

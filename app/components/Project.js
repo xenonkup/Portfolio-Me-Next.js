@@ -29,37 +29,39 @@ export const Project = () => {
   ];
 
   return (
-    <section className='px-4 md:px-20 lg:px-44 pt-10'>
+    <section className='px-4 md:px-20 lg:px-44'>
       <div className='w-full flex flex-row justify-start'>
-        <h1 className='font-black text-2xl md:text-3xl lg:text-4xl pt-10'>
+        <h1 className='text-xl sm:text-4xl md:text-4xl font-bold'>
           Some of my favorite Projects.
         </h1>
       </div>
 
       {/* Project Image */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 pt-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 pt-10 pb-10 ">
         {projects.map((project, index) => (
           <div
             key={index}
             className="flex flex-col border border-solid border-black transition-all duration-500">
-            <div className="flex-grow">
+            <div className="flex">
               <Image
                 src={project.imageSrc}
                 alt={project.altText}
                 width={800}
                 height={800}
-                className="object-cover w-full h-full"
+                className="object-cover w-full h-[300px]"
               />
             </div>
-            <div className="p-4">
-              <h4 className="text-base font-semibold text-gray-900 mb-2 capitalize transition-all duration-500">
-                {project.title}
-              </h4>
-              <p className="text-sm font-normal text-gray-500 transition-all duration-500 leading-5 mb-5">
-                {project.description}
-              </p>
+            <div className="flex flex-col justify-between p-4 flex-grow">
+              <div>
+                <h4 className="text-xl sm:text-2xl md:text-2xl font-semibold text-gray-900 mb-2 capitalize transition-all duration-500">
+                  {project.title}
+                </h4>
+                <p className="text-base font-semibold text-gray-500 transition-all duration-500 leading-5 mb-5">
+                  {project.description}
+                </p>
+              </div>
               {/* ปุ่มลิงก์ Read More */}
-              <Link href={project.link} className="bg-black shadow-sm rounded-full py-2 px-5 text-xs text-white font-semibold" target='_blank'>
+              <Link href={project.link} className="bg-black shadow-sm rounded-full py-2 px-5 font-medium text-sm md:text-xl text-center dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700 text-white mt-4 w-max" target='_blank'>
                 Read More
               </Link>
             </div>

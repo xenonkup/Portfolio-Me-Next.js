@@ -2,7 +2,7 @@ import { Navbar } from "./components/Navbar"
 import { Hero } from "./components/Hero"
 import { Skill } from "./components/Skill"
 import { Project } from "./components/Project"
-import { contact } from "./components/contact"
+import { Contact } from "./components/Contact" // Corrected casing
 import { Footer } from "./components/Footer"
 
 export default function Home() {
@@ -12,6 +12,8 @@ export default function Home() {
     <Hero />
     <Skill />
     <Project />
+    <Contact />
+    <Footer />
    </div>
   );
 }
