@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 export const Hero = () => {
   return (
-    <section className='flex flex-col lg:flex-row items-center px-4 md:px-20 lg:px-44 '>
+    <section className='flex flex-col lg:flex-row items-center px-4 md:px-20 lg:px-44'>
       <div className="flex-1 text-center lg:text-left pt-10 pb-10">
         
         <h1 className='text-xl sm:text-2xl md:text-2xl font-bold'>
