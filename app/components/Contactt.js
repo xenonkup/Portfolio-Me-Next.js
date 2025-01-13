@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 
-export const Contact = () => {
+export const contact = () => {
   return (
     <section id="contact" className='px-4 md:px-20 lg:px-44 bg-stone-900 py-10'>
       {/* Follow Me */}
