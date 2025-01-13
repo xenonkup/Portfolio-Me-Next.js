@@ -1,66 +1,35 @@
 import Link from 'next/link';
 import React from 'react';
+import { FaInstagram, FaGithub, FaLinkedin } from 'react-icons/fa';
 
 export const Footer = () => {
   return (
     <footer className="px-4 md:px-20 lg:px-44 bg-black py-8">
-      <div className="flex flex-col lg:flex-row items-start justify-between text-white">
-
-        {/* Title */}
-        <div className="mb-6 lg:mb-0">
-          <h1 className="text-lg font-bold">Korakot Jorralee</h1>
-        </div>
-
-        {/* Menu */}
-        <div className="mb-6 lg:mb-0">
-          <h2 className="text-lg font-semibold">Menu</h2>
-          <ul className="space-y-2">
-            <li className='hover:text-blue-400'>
-               <Link href='#'>Home</Link>
-            </li>
-            <li className='hover:text-blue-400'>
-                <Link href='#'>Skill</Link>
-            </li>
-            <li className='hover:text-blue-400'>
-                <Link href='#'>Project</Link>
-            </li>
-            <li className='hover:text-blue-400'>
-                <Link href='#'>Contact</Link>
-            </li>
-          </ul>
-        </div>
-
-        {/* Information */}
-        <div className="mb-6 lg:mb-0">
-          <h2 className="text-lg font-semibold">Information</h2>
-          <ul className="space-y-2">
-            <li className='hover:text-blue-400'>
-                064-328-2060
-            </li>
-            <li className='hover:text-blue-400'>
-                Korakot.jorralee@gmail.com
-            </li>
-            <li className='hover:text-blue-400'>
-                Ubon Ratchathani, Thailand
-            </li>
-          </ul>
-        </div>
-
-        {/* Social Media */}
-        <div>
-          <h2 className="text-lg font-semibold">Social Media</h2>
-          <ul className="space-y-2">
-            <li className='hover:text-blue-400'>
-                <Link href="https://www.instagram.com/xenonkup2000/">Instagram</Link>
-            </li>
-            <li className='hover:text-blue-400'>
-                <Link href='https://github.com/xenonkup'>Github</Link>
-            </li>
-            <li className='hover:text-blue-400'>
-                <Link href='https://www.linkedin.com/in/%E0%B8%99%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%A3%E0%B8%81%E0%B8%8A-%E0%B8%88%E0%B8%A3%E0%B8%A5%E0%B8%B5-1a292732b/'>LinkedIn</Link>
-            </li>
-          </ul>
-        </div>
+      <div className="flex flex-col items-center text-white mb-4">
+        <h2 className="text-lg font-semibold">Follow Me</h2>
+      </div>
+      <ul className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-10 text-white justify-center pt-5">
+        <li className='hover:text-blue-400'>
+          <Link href='https://www.instagram.com/xenonkup2000/' className="flex items-center space-x-2">
+              <FaInstagram size={40} />
+              <span>Instagram</span>
+          </Link>
+        </li>
+        <li className='hover:text-blue-400'>
+          <Link href='https://github.com/xenonkup' className="flex items-center space-x-2">
+              <FaGithub size={40} />
+              <span>Github</span>
+          </Link>
+        </li>
+        <li className='hover:text-blue-400'>
+          <Link href='https://www.linkedin.com/in/%E0%B8%99%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%A3%E0%B8%81%E0%B8%8A-%E0%B8%88%E0%B8%A3%E0%B8%A5%E0%B8%B5-1a292732b/' className="flex items-center space-x-2">
+              <FaLinkedin size={40} />
+              <span>LinkedIn</span>
+          </Link>
+        </li>
+      </ul>
+      <div className='pt-5 border-t border-gray-700 mt-5'>
+        <p className='text-center text-white pt-5'>© 2025 TIGER Korakot Front-End Developer Website</p>
       </div>
     </footer>
   );

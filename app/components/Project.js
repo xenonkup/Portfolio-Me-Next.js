@@ -29,19 +29,19 @@ export const Project = () => {
   ];
 
   return (
-    <section className='px-4 md:px-20 lg:px-44'>
-      <div className='w-full flex flex-row justify-start'>
-        <h1 className='text-xl sm:text-4xl md:text-4xl font-bold'>
+    <section id="projects" className='px-4 md:px-20 lg:px-44 py-10 bg-gray-100'>
+      <div className='w-full flex flex-row justify-start mb-8'>
+        <h1 className='text-2xl sm:text-4xl md:text-4xl font-bold'>
           Some of my favorite Projects.
         </h1>
       </div>
 
       {/* Project Image */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 pt-10 pb-10 ">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {projects.map((project, index) => (
           <div
             key={index}
-            className="flex flex-col border border-solid border-black transition-all duration-500">
+            className="flex flex-col border border-gray-300 bg-white shadow-md hover:shadow-lg transition-shadow duration-300">
             <div className="flex">
               <Image
                 src={project.imageSrc}
@@ -53,10 +53,10 @@ export const Project = () => {
             </div>
             <div className="flex flex-col justify-between p-4 flex-grow">
               <div>
-                <h4 className="text-xl sm:text-2xl md:text-2xl font-semibold text-gray-900 mb-2 capitalize transition-all duration-500">
+                <h4 className="text-xl sm:text-2xl md:text-2xl font-semibold text-gray-900 mb-2 capitalize">
                   {project.title}
                 </h4>
-                <p className="text-base font-semibold text-gray-500 transition-all duration-500 leading-5 mb-5">
+                <p className="text-base font-semibold text-gray-500 leading-5 mb-5">
                   {project.description}
                 </p>
               </div>

@@ -5,6 +5,7 @@ import Image from 'next/image'
 
 export const Skill = () => {
 
+    // Object
     const programmingSkills = [
         { src: "/assets/Programming/HTML5.png", alt: "HTML5" },
         { src: "/assets/Programming/CSS3.png", alt: "CSS3" },
@@ -27,17 +28,19 @@ export const Skill = () => {
     ];
 
     return (
-        <section className='px-4 md:px-20 lg:px-44'>
-            <div className='flex flex-row justify-start w-full'>
-                <p className='text-xl sm:text-4xl md:text-4xl font-bold'>
-                    Skill
+        <section id="skills" className='px-4 md:px-20 lg:px-44 py-10 bg-gray-100'>
+            {/* Skill */}
+            <div className='flex flex-row justify-start w-full mb-8'>
+                <p className='text-2xl sm:text-4xl md:text-4xl font-bold text-gray-800'>
+                    Skills
                 </p>
             </div>
             <div className='flex justify-center'>
-                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 md:gap-7 lg:gap-10 justify-items-center w-full pt-10 pb-10">
+                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 md:gap-7 lg:gap-10 justify-items-center w-full">
+                    {/* ทำการ map เพื่อ วนซ้ำทุก Array */}
                     {programmingSkills.map((items) => {
                         return (
-                            <div className='border border-black flex justify-center items-center w-32 h-32 md:w-32 md:h-32 hover:bg-white transition duration-500 hover:scale-125' key={items.src}>
+                            <div className='border border-gray-300 bg-white flex justify-center items-center w-32 h-32 md:w-32 md:h-32 hover:bg-gray-200 transition duration-500 hover:scale-110 shadow-md' key={items.src}>
                                 <Image
                                     src={items.src}
                                     alt={items.alt}
