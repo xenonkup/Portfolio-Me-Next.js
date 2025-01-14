@@ -2,7 +2,7 @@ import { Navbar } from "./components/Navbar"
 import { Hero } from "./components/Hero"
 import { Skill } from "./components/Skill"
 import { Project } from "./components/Project"
-import { Contactt } from "./components/Contactt"
+import { Add } from "./components/Add"
 import { Footer } from "./components/Footer"
 
 export default function Home() {
@@ -12,7 +12,7 @@ export default function Home() {
     <Hero />
     <Skill />
     <Project />
-    <Contactt />
+    <Add />
     <Footer />
    </div>
   );
